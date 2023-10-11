@@ -15,7 +15,7 @@ console.log('stringToNumber("42")', stringToNumber("42")); // Виведе 42
 function isAlmostSame(num1, num2) {
   // Визначаємо, чи є різниця між двома числами меншою або рівною EPSILON
 
-  return num1 - num2 <= Number.EPSILON;
+  return num1 - num2 <= Number.EPSILON && num2 - num1 <= Number.EPSILON;
 }
 
 console.log("Завдання 2 ====================================");
